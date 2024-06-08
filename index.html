@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulking Workout Schedule</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #050505;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+        header {
+            background: #050505;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #ff6200 4px solid;
+        }
+        header h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .main-content {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: -20px;
+            padding: 30px;
+        }
+        h2, h3 {
+            color: #ff6200;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        h3 {
+            cursor: pointer;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        h3::before {
+            content: '▼';
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+        h3.collapsed::before {
+            transform: rotate(-90deg);
+        }
+        h3:hover {
+            color: #050505;
+        }
+        .workout-section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            line-height: 1.6;
+            display: none;
+        }
+        li {
+            margin-bottom: 10px;
+            background: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #ff6200;
+        }
+        li strong {
+            font-weight: bold;
+        }
+        li img {
+            display: none;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        p strong {
+            color: #5e5c5c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bulking Workout Schedule</h1>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <section class="workout-section">
+                <h2><li>Personal Information</li></h2>
+                <p><strong>Name:</strong> Venkat Nandi</p>
+                <p><strong>Age:</strong> 20</p>
+                <p><strong>Height:</strong> 179cm (5 Feet 11 inches)</p>
+                <p><strong>Weight:</strong> 75kg</p>
+            </section>
+
+            <section class="workout-section">
+                <h2><li>Workout Routine</li></h2>
+
+                <h3 onclick="toggleVisibility('monday')" class="collapsed">Monday: Chest and Triceps</h3>
+                <ul id="monday">
+                    <li onclick="toggleGif(this)"><strong>Bench Press:</strong> 4 sets of 6-8 reps 
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/05/barbell-pause-bench.gif" alt="Bench Press">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Incline Dumbbell Press:</strong> 3 sets of 8-10 reps
+                        <img src="https://boxlifemagazine.com/wp-content/uploads//2023/06/image-4.gif" alt="Incline Dumbbell Press">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Chest Flyes:</strong> 3 sets of 10-12 reps
+                        <img src="https://newlife.com.cy/wp-content/uploads/2019/11/03081301-Dumbbell-Fly_Chest-FIX_360.gif" alt="Chest Flyes">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Dips:</strong> 3 sets to failure
+                        <img src="https://fitnessvolt.com/wp-content/uploads/2015/08/parallel-bar-dips.gif" alt="Dips">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Tricep Pushdowns:</strong> 3 sets of 10-12 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2021/10/cable-tricep-pushdown.gif" alt="Tricep Pushdowns">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Overhead Tricep Extension:</strong> 3 sets of 10-12 reps
+                        <img src="https://i.pinimg.com/originals/b0/7e/04/b07e041f3be7b6a0164b8a117300d9c4.gif" alt="Overhead Tricep Extension">
+                    </li>
+                </ul>
+
+                <h3 onclick="toggleVisibility('tuesday')" class="collapsed">Tuesday: Back and Biceps</h3>
+                <ul id="tuesday">
+                    <li onclick="toggleGif(this)"><strong>Deadlifts:</strong> 4 sets of 6-8 reps
+                        <img src="https://www.kettlebellkings.com/cdn/shop/articles/barbell-deadlift-movement_1200x1200_crop_center.gif?v=1692228918" alt="Deadlifts">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Pull-Ups:</strong> 3 sets to failure
+                        <img src="https://homeworkouts.org/wp-content/uploads/anim-pull-ups.gif" alt="Pull-Ups">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Bent Over Rows:</strong> 3 sets of 8-10 reps
+                        <img src="https://boxlifemagazine.com/wp-content/uploads//2023/07/image-11.gif" alt="Bent Over Rows">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Lat Pulldowns:</strong> 3 sets of 10-12 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/08/close-grip-lat-pulldown.gif" alt="Lat Pulldowns">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Barbell Curls:</strong> 3 sets of 10-12 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2023/02/barbell-cheat-curl.gif" alt="Barbell Curls">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Hammer Curls:</strong> 3 sets of 10-12 reps
+                        <img src="https://boxlifemagazine.com/wp-content/uploads//2023/07/image-1.gif" alt="Hammer Curls">
+                    </li>
+                </ul>
+
+                <h3 onclick="toggleVisibility('wednesday')" class="collapsed">Wednesday: Legs</h3>
+                <ul id="wednesday">
+                    <li onclick="toggleGif(this)"><strong>Squats:</strong> 4 sets of 6-8 reps
+                        <img src="https://www.kettlebellkings.com/cdn/shop/articles/Front_Squats.gif?v=1694617488&width=1024" alt="Squats">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Leg Press:</strong> 3 sets of 8-10 reps
+                        <img src="https://newlife.com.cy/wp-content/uploads/2019/11/29511301-Lever-Horizontal-Leg-Press_Thighs_360.gif" alt="Leg Press">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Leg Curls:</strong> 3 sets of 10-12 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/03/seated-leg-curl.gif" alt="Leg Curls">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Leg Extensions:</strong> 3 sets of 10-12 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2023/07/leg-extension-toes-inward.gif" alt="Leg Extensions">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Calf Raises:</strong> 4 sets of 15-20 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2021/06/squat-hold-calf-raises.gif" alt="Calf Raises">
+                    </li>
+                </ul>
+
+                <h3 onclick="toggleVisibility('thursday')" class="collapsed">Thursday: Shoulders and Abs</h3>
+                <ul id="thursday">
+                    <li onclick="toggleGif(this)"><strong>Overhead Press:</strong> 4 sets of 6-8 reps
+                        <img src="https://newlife.com.cy/wp-content/uploads/2019/11/00911301-Barbell-Seated-Overhead-Press_Shoulders_360.gif" alt="Overhead Press">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Side Lateral Raises:</strong> 3 sets of 10-12 reps
+                        <img src="https://homeworkouts.org/wp-content/uploads/anim-dumbbell-lateral-raise.gif" alt="Side Lateral Raises">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Front Raises:</strong> 3 sets of 10-12 reps
+                        <img src="https://newlife.com.cy/wp-content/uploads/2019/11/03871301-Dumbbell-Seated-Alternate-Front-Raise_Shoulders_360.gif" alt="Front Raises">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Reverse Pec Deck Flyes:</strong> 3 sets of 10-12 reps
+                        <img src="https://burnfit.io/wp-content/uploads/2023/11/REV_PEC_DECK_MC.gif" alt="Reverse Pec Deck Flyes">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Hanging Leg Raises:</strong> 3 sets of 15 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/06/hanging-leg-raise-movement.gif" alt="Hanging Leg Raises">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Cable Crunches:</strong> 3 sets of 15 reps
+                        <img src="https://i.pinimg.com/originals/54/68/d5/5468d5032b585e2e6682f9257d27d568.gif" alt="Cable Crunches">
+                    </li>
+                </ul>
+
+                <h3 onclick="toggleVisibility('friday')" class="collapsed">Friday: Chest and Back</h3>
+                <ul id="friday">
+                    <li onclick="toggleGif(this)"><strong>Incline Bench Press:</strong> 4 sets of 6-8 reps
+                        <img src="https://newlife.com.cy/wp-content/uploads/2019/11/00471301-Barbell-Incline-Bench-Press_Chest_360.gif" alt="Incline Bench Press">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Flat Dumbbell Press:</strong> 3 sets of 8-10 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/01/dumbbell-incline-reverse-grip-bench.gif" alt="Flat Dumbbell Press">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Pull-Overs:</strong> 3 sets of 10-12 reps
+                        <img src="https://boxlifemagazine.com/wp-content/uploads//2023/05/pullover-haltere.gif" alt="Pull-Overs">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>T-Bar Rows:</strong> 3 sets of 8-10 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2023/04/neutral-grip-cable-rows.gif" alt="T-Bar Rows">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Single-Arm Dumbbell Rows:</strong> 3 sets of 10-12 reps each arm
+                        <img src="https://i.pinimg.com/originals/2e/1d/11/2e1d11bc46aa8a0fb1d42fa9e97bbf9e.gif" alt="Single-Arm Dumbbell Rows">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Hyperextensions:</strong> 3 sets of 15 reps
+                        <img src="https://cdn-cccio.nitrocdn.com/sQAAylIpwgMYZgBLSXcMgCkUIbfIzHvb/assets/images/optimized/rev-3d9de4c/www.aleanlife.com/wp-content/uploads/2020/09/full-stretch-for-hyperextension.gif" alt="Hyperextensions">
+                    </li>
+                </ul>
+
+                <h3 onclick="toggleVisibility('saturday')" class="collapsed">Saturday: Arms and Abs</h3>
+                <ul id="saturday">
+                    <li onclick="toggleGif(this)"><strong>Close-Grip Bench Press:</strong> 4 sets of 6-8 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/12/dumbbell-close-grip-press.gif" alt="Close-Grip Bench Press">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Skull Crushers:</strong> 3 sets of 10-12 reps
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/08/incline-skullcrusher.gif" alt="Skull Crushers">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Preacher Curls:</strong> 3 sets of 10-12 reps
+                        <img src="https://newlife.com.cy/wp-content/uploads/2019/11/04021301-Dumbbell-Seated-Preacher-Curl_Upper-Arms_360.gif" alt="Preacher Curls">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Concentration Curls:</strong> 3 sets of 10-12 reps each arm
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/01/barbell-concentration-curls.gif" alt="Concentration Curls">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Russian Twists:</strong> 3 sets of 20 reps each side
+                        <img src="https://fitnessvolt.com/wp-content/uploads/2023/09/kettlebell-russian-twist.gif" alt="Russian Twists">
+                    </li>
+                    <li onclick="toggleGif(this)"><strong>Planks:</strong> 3 sets of 60 seconds
+                        <img src="https://www.inspireusafoundation.org/wp-content/uploads/2022/11/body-saw-plank.gif" alt="Planks">
+                    </li>
+                </ul>
+
+                <h3 onclick="toggleVisibility('sunday')" class="collapsed">Sunday: Rest Day</h3>
+                <ul id="sunday">
+                    <li><strong>Relax and Recover:</strong> Focus on rest, hydration, and nutrition</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function toggleVisibility(dayId) {
+            var element = document.getElementById(dayId);
+            var header = element.previousElementSibling;
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+                header.classList.remove("collapsed");
+            } else {
+                element.style.display = "none";
+                header.classList.add("collapsed");
+            }
+        }
+
+        function toggleGif(listItem) {
+            var gif = listItem.querySelector('img');
+            if (gif.style.display === "none" || gif.style.display === "") {
+                gif.style.display = "block";
+            } else {
+                gif.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
